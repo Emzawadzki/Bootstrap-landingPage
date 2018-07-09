@@ -1,0 +1,44 @@
+@mixin star-breaker($color, $background) {
+  border: none;
+  position: relative;
+  padding: 30px 0;
+  overflow: visible;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: $color;
+    height: 4px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:after {
+    @include awesomeIcon();
+    content: '\f005';
+    min-width: 25px;
+    width: 3%;
+    background: $background;
+    display: block;
+    position: absolute;
+    color: $color;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin button ($color, $background) {
+  font-size: 20px;
+  color: $color;
+  background: $background;
+  border: 2px solid $color;
+  border-radius: 4px;
+  padding: 25px;
+}
+
+@mixin awesomeIcon () {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}

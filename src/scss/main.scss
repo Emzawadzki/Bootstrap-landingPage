@@ -1,3 +1,10 @@
-body {
-  background: red;
-}
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'general';
+@import 'header';
+@import 'nav';
+@import 'main-section';
+@import 'portfolio';
+@import 'gallery';
+@import 'about';

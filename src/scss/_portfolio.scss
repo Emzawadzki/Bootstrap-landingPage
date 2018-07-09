@@ -1,0 +1,12 @@
+.portfolio {
+  background: $content--sec--bgr;
+  color: $content--sec--txt;
+  &__container {
+  }
+  &__title {
+    
+  }
+  &__break {
+    @include star-breaker($content--sec--txt, $content--sec--bgr);
+  }
+}
