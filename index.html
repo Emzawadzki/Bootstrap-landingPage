@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Start Bootstrap</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,600,700&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
 </head>
 <body>
   <header class="header">
     <div class="header__container l--wrapper">
       <h1 class="header__logo">
-        <a href="#" class="header__link l--link">Start Bootstrap</a>
+        <a href="#Main" class="header__link l--link">Start Bootstrap</a>
       </h1>
       <nav class="nav">
         <ul class="nav__list">
@@ -23,31 +25,31 @@
       </nav>
     </div>
   </header>
-  <section class="main">
+  <section class="main" id="Main">
     <div class="main__container l--wrapper">
-      <img src="http://place-hold.it/324" alt="profile_image" class="main__img"/>
+      <img src="http://place-hold.it/256" alt="profile_image" class="main__img"/>
       <h2 class="main__title">Start Bootstrap</h2>
       <hr class="main__break">
       <h4 class="main__sub-title">Web Developer - Graphic Artist - User Experience Designer</h4>
     </div>
   </section>
-  <section class="portfolio">
+  <section class="portfolio" id="Portfolio">
     <div class="portfolio__container l--wrapper">
-      <h3 class="portfolio__title l--section-title" id="Portfolio">Portfolio</h3>
+      <h3 class="portfolio__title l--section-title">Portfolio</h3>
       <hr class="portfolio__break">
       <div class="gallery l--row">
-        <div class="l--col-1-3"><a class="gallery__link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
-        <div class="l--col-1-3"><a class="gallery__link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
-        <div class="l--col-1-3"><a class="gallery__link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
-        <div class="l--col-1-3"><a class="gallery__link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
-        <div class="l--col-1-3"><a class="gallery__link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
-        <div class="l--col-1-3"><a class="gallery__link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
+        <div class="l--col-1-3"><a class="gallery__link l--link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
+        <div class="l--col-1-3"><a class="gallery__link l--link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
+        <div class="l--col-1-3"><a class="gallery__link l--link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
+        <div class="l--col-1-3"><a class="gallery__link l--link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
+        <div class="l--col-1-3"><a class="gallery__link l--link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
+        <div class="l--col-1-3"><a class="gallery__link l--link" href="#"><img class="gallery__img" src="http://place-hold.it/900x650" alt=""></a></div>
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="About">
     <div class="about__container l--wrapper">
-      <h3 class="about__title l--section-title" id="About">About</h3>
+      <h3 class="about__title l--section-title">About</h3>
       <hr class="about__break">
       <div class="l--row">
         <div class="l--col-1-2">
@@ -62,5 +64,65 @@
       </button>
     </div>
   </section>
+  <section class="contact" id="Contact">
+    <div class="contact__container l--wrapper">
+      <h3 class="contact__title l--section-title">Contact me</h3>
+      <hr class="contact__break">
+      <form action="submit" class="form">
+        <label for="name" class="form__label l--hidden">Name</label>
+        <input type="text" name="name" placeholder="Name" class="form__input" id="js-contact-name">
+        <br/>
+        <span class="form__error l--error-name" id="js-contact-err-name"></span>
+        <hr class="form__break">
+        <label for="email" class="form__label l--hidden">Email Address</label>
+        <input type="email" name="email" placeholder="Email Address" class="form__input" id="js-contact-email">
+        <br/>
+        <span class="form__error l--error-email" id="js-contact-err-email"></span>
+        <hr class="form__break">
+        <label for="phone" class="form__label l--hidden">Phone Number</label>
+        <input type="text" name="phone" placeholder="Phone Number" class="form__input" id="js-contact-phone">
+        <br/>
+        <span class="form__error l--error-phone" id="js-contact-err-phone"></span>
+        <hr class="form__break">
+        <label for="message" class="form__label l--hidden">Message</label>
+        <textarea type="text" name="message" placeholder="Message" rows=5 class="form__input l--textarea" id="js-contact-message"/></textarea>
+        <br/>
+        <span class="form__error l--error-message" id="js-contact-err-message"></span>
+        <hr class="form__break">
+        <button type="submit" class="form__button">Send</button>
+        <span class="form__success" id="js-contact-success">Message successfully sent!</span>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__container l--wrapper">
+      <div class="l--row">
+        <div class="l--col-1-3">
+          <h5 class="footer__sub-title">Location</h5>
+          <p class="footer__content">2215 John Daniel Drive Clark, MO 65243</p>
+        </div>
+        <div class="l--col-1-3">
+          <h5 class="footer__sub-title">Around the Web</h5>
+          <ul class="footer__list">
+            <li class="footer__element"><a class="footer__link l--link" href="#"><i class="footer__icon fab fa-facebook-f"></i></a></li>
+            <li class="footer__element"><a class="footer__link l--link" href="#"><i class="footer__icon fab fa-google-plus-g"></i></a></li>
+            <li class="footer__element"><a class="footer__link l--link" href="#"><i class="footer__icon fab fa-linkedin-in"></i></a></li>
+            <li class="footer__element"><a class="footer__link l--link" href="#"><i class="footer__icon fab fa-twitter"></i></a></li>
+            <li class="footer__element"><a class="footer__link l--link" href="#"><i class="footer__icon fab fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+        <div class="l--col-1-3">
+          <h5 class="footer__sub-title">About freelancer</h5>
+          <p class="footer__content">Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer__footer">
+      <div class="l--wrapper ">
+        <small>Copyright &#169; Your Website 2018</small>
+      </div>
+    </footer>
+  </footer>
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
 </body>
 </html>

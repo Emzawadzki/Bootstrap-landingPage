@@ -1,7 +1,6 @@
 body {
   font-family: $content--font;
   font-size: 16px;
-  max-width: 2560px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,10 +31,28 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
 }
 
+.l--hidden {
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+}
+
 // Specific classes
 
 .l--link {
   text-decoration: none;
+  outline: none;
+}
+
+.l--section-title {
+  font-size: 46px;
+  text-transform: uppercase;
+  padding-top: 70px;
+}
+
+.l--textarea {
+  resize: none;
+  font-family: $content--font;
 }
 
 .l--icon-main {
@@ -43,8 +60,42 @@ h1, h2, h3, h4, h5, h6 {
   color: $content--main--txt;
 }
 
-.l--section-title {
-  font-size: 46px;
-  text-transform: uppercase;
-  padding-top: 70px;
+//icons
+
+.l--icon-fb:after {
+  content: '\f39e';
+}
+
+.l--icon-google:after {
+  content: '\f0d5';
+}
+
+.l--icon-twitter:after {
+  content: '\f099';
+}
+
+.l--icon-linkedin:after {
+  content: '\f0e1';
+}
+
+.l--icon-dribbble:after {
+  content: '\f17d';
+}
+
+//error messages
+
+.l--error-name:after {
+  content: 'Wrong name! Please make sure your name is combination of letters (a-z, A-Z) ONLY'
+}
+
+.l--error-email:after {
+  content: 'Wrong email format!'
+}
+
+.l--error-phone:after {
+  content: 'Wrong phone number format!'
+}
+
+.l--error-message:after {
+  content: 'Write your message!'
 }

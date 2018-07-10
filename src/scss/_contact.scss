@@ -1,8 +1,11 @@
-.portfolio {
+.contact {
   background: $content--sec--bgr;
   color: $content--sec--txt;
   &__container {
-    padding-bottom: 70px;
+    padding: 0 250px;
+  }
+  &__title {
+
   }
   &__break {
     @include star-breaker($content--sec--txt, $content--sec--bgr);

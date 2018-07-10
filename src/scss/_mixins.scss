@@ -17,8 +17,7 @@
   &:after {
     @include awesomeIcon();
     content: '\f005';
-    min-width: 25px;
-    width: 3%;
+    min-width: 30px;
     background: $background;
     display: block;
     position: absolute;
@@ -30,15 +29,26 @@
 }
 
 @mixin button ($color, $background) {
+  cursor: pointer;
   font-size: 20px;
   color: $color;
   background: $background;
   border: 2px solid $color;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 25px;
+  transition: 0.25s all;
+  &:focus,
+  &:hover {
+    box-shadow: inset 0 0 10px 3px $color;
+  }
 }
 
 @mixin awesomeIcon () {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+
+@mixin awesomeIconBrand () {
+  font-family: "Font Awesome 5 Free";
+  font-weight: initial;
 }

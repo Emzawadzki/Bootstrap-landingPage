@@ -4,9 +4,6 @@
   &__container {
     padding: 0 250px;
   }
-  &__title {
-    
-  }
   &__break {
     @include star-breaker($content--main--txt, $content--main--bgr)
   }
@@ -16,6 +13,7 @@
   }
   &__btn {
     @include button($content--main--txt, $content--main--bgr);
+    margin: 20px 0 70px 0;
     & span {
       position: relative;
       &:before {

@@ -1,9 +1,15 @@
 .gallery {
-
   &__link {
-    
+    display: block;
+    transition: 0.5s all;
+    &:focus,
+    &:hover {
+      transform: scale(1.05) rotate(5deg);
+      box-shadow: 0 0 20px 3px $content--sec--txt;
+    }
   }
   &__img {
+    display: block;
     max-width: 100%;
     height: auto;
   }

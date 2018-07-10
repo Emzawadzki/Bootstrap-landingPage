@@ -1,7 +1,12 @@
 import '../scss/main.scss';
+import { scroll } from './scroll.js';
+import { anchors } from './anchors.js';
+import { validation } from './validation';
 
-document.addEventListener('DOMContentLoaded', function() {
-
-  console.log('js loaded');
-  
+$(function() {
+  scroll();
+  anchors();
+  validation();
 })
+
+
