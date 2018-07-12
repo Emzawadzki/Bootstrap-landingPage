@@ -46,3 +46,19 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .footer {
+    &__container {
+      padding: 20px 35px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .footer {
+    &__container {
+      padding: 20px 10px;
+    }
+  }
+}

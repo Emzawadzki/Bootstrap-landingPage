@@ -4,10 +4,23 @@
   &__container {
     padding: 0 250px;
   }
-  &__title {
-
-  }
   &__break {
     @include star-breaker($content--sec--txt, $content--sec--bgr);
+  }
+}
+
+@media (max-width: 960px) {
+  .contact {
+    &__container {
+      padding: 0 100px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .contact {
+    &__container {
+      padding: 0 20px;
+    }
   }
 }

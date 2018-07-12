@@ -21,3 +21,27 @@
     font-weight: normal;
   }
 }
+
+@media (max-width: 1250px) {
+  .main {
+    padding-top: 50px;
+    &__title {
+      font-size: 50px;
+    }
+    &__sub-title {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .main {
+    padding-top: 20px;
+    &__title {
+      font-size: 36px;
+    }
+    &__sub-title {
+      font-size: 18px;
+    }
+  }
+}

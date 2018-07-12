@@ -4,7 +4,7 @@
     transition: 0.5s all;
     &:focus,
     &:hover {
-      transform: scale(1.05) rotate(5deg);
+      transform: scale(1.05);
       box-shadow: 0 0 20px 3px $content--sec--txt;
     }
   }
@@ -12,5 +12,12 @@
     display: block;
     max-width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .gallery {
+    max-width: 450px;
+    margin: 0 auto;
   }
 }

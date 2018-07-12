@@ -8,7 +8,7 @@ export function validation () {
     $('[id*=js-contact-err]').hide();
     $contactSuccess.hide();
 
-    const nameRe = /^[a-zA-Z0-9_]+$/;
+    const nameRe = /^[a-zA-Z0-9_ ]+$/;
     const emailRe = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const phoneRe = /^[0-9+-]+$/;
 

@@ -2,7 +2,6 @@ export function anchors() {
   $('a[href*="#"]').not('[href="#"]').on('click', function(e) {
     const $header = $('.header');
     let headerHeight = $header.height();
-    console.log(headerHeight);
     
     let scrollTarget;
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -10,9 +9,8 @@ export function anchors() {
       scrollTarget = scrollTarget.length ? scrollTarget : $('#' + this.hash.slice(1));
     }
     
-    if(!$header.hasClass('header--fixed') && scrollTarget.attr('id') !== 'Main') {
+    if(!$header.hasClass('header--small') && scrollTarget.attr('id') !== 'Main') {
       headerHeight = 80;
-      
     }
     
 

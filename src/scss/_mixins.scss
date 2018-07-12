@@ -28,7 +28,7 @@
   }
 }
 
-@mixin button ($color, $background) {
+@mixin button ($color, $background, $focus:$background) {
   cursor: pointer;
   font-size: 20px;
   color: $color;
@@ -37,9 +37,12 @@
   border-radius: 6px;
   padding: 25px;
   transition: 0.25s all;
-  &:focus,
+  outline: none;
   &:hover {
     box-shadow: inset 0 0 10px 3px $color;
+  }
+  &:focus {
+    outline: 1px dotted $focus;
   }
 }
 
